@@ -1,0 +1,198 @@
+.review-page {
+  padding-bottom: 90px;
+}
+
+.review-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: white;
+  border: 1px solid #e4dcc8;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.review-status {
+  padding: 9px 16px;
+  border-radius: 999px;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.review-status.pending {
+  background: #fff7ed;
+  color: #f97316;
+}
+
+.review-status.approved {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.review-title {
+  margin: 26px 0 20px;
+  font-size: 34px;
+  font-weight: 900;
+  color: #111827;
+}
+
+.issue-summary-card,
+.answer-card,
+.comment-card {
+  background: white;
+  border: 1px solid #e4dcc8;
+  border-radius: 26px;
+  padding: 26px;
+  margin-bottom: 20px;
+}
+
+.issue-summary-card h2 {
+  margin: 0 0 24px;
+  font-size: 26px;
+  line-height: 1.35;
+  color: #111827;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.info-card {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: #f8f6f1;
+  border: 1px solid #e4dcc8;
+  border-radius: 18px;
+  padding: 16px;
+}
+
+.info-icon {
+  color: #6b7280;
+}
+
+.info-card p {
+  margin: 0;
+  color: #7a7a7a;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.info-card h4 {
+  margin: 4px 0 0;
+  color: #111827;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.answer-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.answer-header h2,
+.comment-card h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 900;
+  color: #111827;
+}
+
+.answer-icon {
+  width: 42px;
+  height: 42px;
+  background: #f3e8ff;
+  color: #7c3aed;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer-body {
+  max-height: 420px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  line-height: 1.65;
+  color: #111827;
+  font-size: 15px;
+  padding-right: 10px;
+}
+
+.comment-card textarea {
+  width: 100%;
+  min-height: 120px;
+  margin-top: 14px;
+  border: 1px solid #e4dcc8;
+  border-radius: 18px;
+  padding: 16px;
+  font-size: 15px;
+  outline: none;
+  resize: vertical;
+  background: #f8f6f1;
+}
+
+.comment-card textarea:focus {
+  border-color: #f1c84b;
+}
+
+.review-action-bar {
+  position: sticky;
+  bottom: 0;
+  background: white;
+  border: 1px solid #e4dcc8;
+  border-radius: 22px;
+  padding: 16px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.reject-btn,
+.approve-btn {
+  height: 50px;
+  padding: 0 24px;
+  border-radius: 16px;
+  border: none;
+  font-weight: 900;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.reject-btn {
+  background: #fff1f2;
+  color: #dc2626;
+}
+
+.approve-btn {
+  background: #f1c84b;
+  color: #111827;
+}
+
+.review-empty {
+  background: white;
+  border-radius: 24px;
+  padding: 30px;
+}
+
+@media (max-width: 1100px) {
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

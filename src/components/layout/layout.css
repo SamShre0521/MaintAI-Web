@@ -1,0 +1,204 @@
+/* ===========================
+   Global Layout
+=========================== */
+
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f8f6f1;
+}
+
+/* ===========================
+   Sidebar
+=========================== */
+
+.sidebar {
+  width: 270px;
+  background: #ffffff;
+  border-right: 1px solid #ece6d7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-top {
+  padding: 28px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 45px;
+}
+
+.logo-circle {
+  width: 56px;
+  height: 56px;
+  background: #f1c84b;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-title {
+  font-size: 38px;
+  font-weight: 800;
+  color: #1d2433;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  padding: 16px 18px;
+
+  border-radius: 18px;
+
+  cursor: pointer;
+
+  color: #1f2937;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  transition: .25s;
+}
+
+.menu-item:hover {
+  background: #fff5d5;
+}
+
+.menu-item.active {
+  background: #ffe08a;
+}
+
+.menu-item svg {
+  width: 24px;
+  height: 24px;
+}
+
+.sidebar-bottom {
+  padding: 20px;
+  border-top: 1px solid #ece6d7;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.header {
+
+  height: 88px;
+
+  background: white;
+
+  border-bottom: 1px solid #ece6d7;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 0 40px;
+}
+
+.header-title{
+
+    font-size:50px;
+
+    font-weight:800;
+
+    color:#1d2433;
+
+}
+
+.notification{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:16px;
+
+    border:1px solid #ece6d7;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.notification:hover{
+
+    background:#fff5d5;
+
+}
+
+/* ===========================
+   Main
+=========================== */
+
+.main-content{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.page {
+    flex: 1;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 42px;
+  padding: 12px;
+}
+
+.user-name {
+  font-size: 22px;
+  font-weight: 900;
+  color: #111827;
+}
+
+.user-role {
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #7a7a7a;
+  text-transform: capitalize;
+}
+
+.menu-item.active {
+  background: #f8e7a6;
+  color: #111827;
+  box-shadow: 0 10px 24px rgba(241, 200, 75, 0.28);
+}
+
+.menu-item.active svg {
+  color: #111827;
+}
